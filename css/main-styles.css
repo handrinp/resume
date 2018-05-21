@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url("../img/cork.jpg"); */
+  background-color: #08327d;
+}
+
+#content-wrapper {
+  background-color: #fbfbfb;
+  color: #0f0a01;
+  width: 1200px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 48px black;
+}
+
+header {
+  font-family: 'Ubuntu', 'Calibri', sans-serif;
+  background-color: #0f0a01;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  border-bottom: 1px solid black;
+  box-shadow: 0 0 16px black;
+}
+
+header h1 {
+  color: #fbfbfb;
+  font-weight: bold;
+  font-size: 48pt;
+  padding-left: 100px;
+}
+
+main {
+  font-family: 'Ubuntu', 'Calibri', sans-serif;
+  padding-top: 48pt;
+  padding-bottom: 48pt;
+}
+
+main h1 {
+  font-weight: bold;
+  font-size: 24pt;
+  padding-left: 12px;
+  padding-bottom: 12px;
+}
+
+main h2 {
+  font-weight: bold;
+  font-size: 16pt;
+  padding-left: 12px;
+  padding-bottom: 12px;
+}
+
+main h2 span {
+  font-weight: normal;
+  font-style: italic;
+}
+
+main p {
+  font-size: 16pt;
+  padding-left: 36px;
+}
+
+main ul {
+  padding-bottom: 16px;
+}
+
+main li {
+  padding: 4px 0;
+  margin-left: 48px;
+  font-size: 16pt;
+  list-style-type: disc;
+}
+
+main section {
+  border-bottom: 1px solid black;
+  padding: 12px 25px;
+}
+
+main section:first-child {
+  padding-top: 16px;
+}
+
+main section:last-child {
+  border-bottom: none;
+  padding-bottom: 16px;
+}
+
+footer {
+  font-family: 'Source Code Pro', 'Courier', monospace;
+  background-color: #0f0a01;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid black;
+  box-shadow: 0 0 16px black;
+}
+
+footer p {
+  color: #fbfbfb;
+  font-size: 16pt;
+  text-align: right;
+  padding-right: 100px;
+}
+
+footer a {
+  color: #1d6bf3;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+footer a:hover {
+  padding-right: 5px;
+}
