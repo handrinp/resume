@@ -7,10 +7,23 @@ body {
   background-color: #08327d;
 }
 
+a {
+  color: #1d6bf3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+em {
+  font-style: italic;
+}
+
 #content-wrapper {
   background-color: #fbfbfb;
   color: #0f0a01;
-  width: 1200px;
+  width: 1024px;
   display: block;
   margin: 0 auto;
   box-shadow: 0 0 48px black;
@@ -49,8 +62,9 @@ main h1 {
 main h2 {
   font-weight: bold;
   font-size: 16pt;
+  padding-top: 8px;
   padding-left: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 8px;
 }
 
 main h2 span {
@@ -63,8 +77,9 @@ main p {
   padding-left: 36px;
 }
 
-main ul {
-  padding-bottom: 16px;
+main sup {
+  font-size: 10pt;
+  vertical-align: top;
 }
 
 main li {
@@ -74,8 +89,15 @@ main li {
   list-style-type: disc;
 }
 
+main .sublist {
+  list-style-type: none;
+}
+
+main li li {
+  list-style-type: circle;
+}
+
 main section {
-  border-bottom: 1px solid black;
   padding: 12px 25px;
 }
 
@@ -107,11 +129,19 @@ footer p {
 }
 
 footer a {
-  color: #1d6bf3;
-  text-decoration: none;
   margin-bottom: 8px;
 }
 
-footer a:hover {
-  padding-right: 5px;
+@media screen and (max-width: 1280px) {
+  #content-wrapper {
+    width: 85%;
+  }
+  header h1 {
+    padding-left: 0;
+    text-align: center;
+  }
+  footer p {
+    padding-right: 0;
+    text-align: center;
+  }
 }
